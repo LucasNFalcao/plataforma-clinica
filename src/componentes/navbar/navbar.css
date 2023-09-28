@@ -1,0 +1,11 @@
+.navbar {
+  background-color: lightgray;
+  width: fit-content;
+  height: 100vh;
+  max-height: 100%;
+}
+
+.button-arrow {
+  width: 30px;
+  height: 30px;
+}
