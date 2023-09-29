@@ -4,53 +4,33 @@ import './navbar.css'
 const Navbar = () => {
 
   const [abaSelecionada, setAbaSelecionada] = useState(1)
-  const [barraLateralAberta, setBarraLateralAberta] = useState('')
-
-  const handleControleBarraLateral = (value) => {
-    if (value) {
-      setBarraLateralAberta('active')
-    } else {
-      setBarraLateralAberta('')
-    }
-  }
+  const [barraLateralAberta, setBarraLateralAberta] = useState(false)
+  console.log('barra: ', barraLateralAberta)
 
   return (
     <nav>
       <ul>
         <li>
-          <a href="" className={`logo`}>
-            <img src="" alt="" />
-            <span className={`nav-item`}>Code Info</span>
+          <a href="" className={`logo`} onClick={prevState => setAbaSelecionada(!prevState)}>
+            <img className={`logo-principal`} src="./src/assets/chevron-double-right.svg" alt="" />
           </a>
         </li>
         <li>
           <a href="#">
-            {/* É uma imagem */}
-            <span className={`nav-item`}>Home</span>
+            <img className={`logos-imgs`} src="./src/assets/house-check.svg" alt="" />
+            <span className={`nav-item`}>Área de Trabalho</span>
           </a>
         </li>
         <li>
           <a href="#">
-            {/* É uma imagem */}
-            <span className={`nav-item`}>Profile</span>
+            <img className={`logos-imgs`} src="./src/assets/pencil-square.svg" alt="" />
+            <span className={`nav-item`}>Agendamento de Consulta</span>
           </a>
         </li>
         <li>
           <a href="#">
-            {/* É uma imagem */}
-            <span className={`nav-item`}>Task</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            {/* É uma imagem */}
-            <span className={`nav-item`}>Wallet</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            {/* É uma imagem */}
-            <span className={`nav-item`}>Analytics</span>
+            <img className={`logos-imgs`} src="./src/assets/journal-medical.svg" alt="" />
+            <span className={`nav-item`}>Consulta de Agendamentos</span>
           </a>
         </li>
       </ul>
