@@ -4,17 +4,13 @@ import './App.css'
 
 import Cabecalho from './componentes/cabecalho/cabecalho';
 import Navbar from "./componentes/navbar/Navbar";
-import MenuRolagem from "./componentes/menu_de_rolagem/MenuRolagem";
-import ListaPacientes from "./componentes/lista_pacientes/ListaPacientes";
 
 function App() {
 
   return (
-    <div className={`body-app`}>
+    <div className={``}>
       <Cabecalho/>
       <Navbar />
-      <MenuRolagem />
-      <ListaPacientes/>
     </div>
   )
 }

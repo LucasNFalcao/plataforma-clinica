@@ -1,4 +1,7 @@
 .header {
+  max-height: 150px;
+  position: absolute;
+  z-index: 99;
   background-color: lightgray;
   border: 2px solid darkgray;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
