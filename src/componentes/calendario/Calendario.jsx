@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import './calendario.css'
 
 import { Calendar, Whisper, Popover, Badge } from 'rsuite'
@@ -25,7 +27,7 @@ const getTodoList = (date) => {
   }
 }
 
-const Calendario = () => {
+const Calendario = ({ className }) => {
   function renderCell(date) {
     const list = getTodoList(date)
     const displayList = list.filter((item, index) => index < 2)
@@ -67,7 +69,11 @@ const Calendario = () => {
     return null
   }
 
-  return <Calendar bordered renderCell={renderCell} />
+  return <Calendar className={`calendario ${className}`} bordered renderCell={renderCell} />
+}
+
+Calendario.propTypes = {
+  className: PropTypes.string
 }
 
 export default Calendario

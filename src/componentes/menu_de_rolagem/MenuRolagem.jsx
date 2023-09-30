@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types'
+
 import './menuRolagem.css'
 
-const MenuRolagem = () => {
+const MenuRolagem = ({ className }) => {
   return (
-    <div className={`row`}>
-      <div className={`col-4`}>
-        <div id="list-example" className={`list-group`}>
+    <div className={`row menu-container ${className}`}>
+        <div id="list-example" className={`col-4 list-group`}>
           <a className={`list-group-item list-group-item-action`} href="#list-item-1">
             Item 1
           </a>
@@ -18,13 +19,11 @@ const MenuRolagem = () => {
             Item 4
           </a>
         </div>
-      </div>
-      <div className={`col-8`}>
         <div
           data-bs-spy="scroll"
           data-bs-target="#list-example"
           data-bs-smooth-scroll="true"
-          className={`overflow-y-auto menu-rolagem`}
+          className={`col-8 overflow-y-auto menu-rolagem`}
           tabIndex="0"
         >
           <h4 id="list-item-1">Item 1</h4>
@@ -56,9 +55,12 @@ const MenuRolagem = () => {
             and highlighting.
           </p>
         </div>
-      </div>
     </div>
   )
+}
+
+MenuRolagem.propTypes = {
+  className: PropTypes.string
 }
 
 export default MenuRolagem

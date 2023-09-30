@@ -18,3 +18,9 @@
   width: 6px;
   height: 6px;
 }
+
+.calendario {
+  max-width: 350px;
+  max-height: 300px;
+  overflow: auto;
+}

@@ -1,3 +1,7 @@
 .menu-rolagem {
-  height: 200px;
+  max-height: 250px;
+}
+
+.menu-container {
+  border: 7px solid #eee;
 }

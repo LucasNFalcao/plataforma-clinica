@@ -58,7 +58,7 @@ const mockup_medicos = [
     status: 'Presente no Hospital',
   },
 ]
-const ListaPacientes = ({ ehPacientes = true, ehMedicos }) => {
+const ListaPacientes = ({ ehPacientes = true, ehMedicos, className }) => {
 
   const [listaUsuarios, setListaUsuarios] = useState([])
 
@@ -79,7 +79,7 @@ const ListaPacientes = ({ ehPacientes = true, ehMedicos }) => {
 
 
   return (
-    <div className={`lista-pacientes`}>
+    <div className={`lista-pacientes ${className}`}>
       {listaUsuarios}
     </div>
   )
@@ -88,6 +88,7 @@ const ListaPacientes = ({ ehPacientes = true, ehMedicos }) => {
 ListaPacientes.propTypes = {
   ehPacientes: PropTypes.array,
   ehMedicos: PropTypes.array,
+  className: PropTypes.string,
 }
 
 export default ListaPacientes

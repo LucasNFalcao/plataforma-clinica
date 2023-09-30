@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "busca calendario"
+    "lembrete calendario"
+    "lembrete calendario"
+    "historico lista"
+    "historico lista"
+}
+
+.item-busca {
+  grid-area: busca;
+}
+
+.item-lembrete {
+  grid-area: lembrete;
+}
+
+.item-historico {
+  grid-area: historico;
+}
+
+.item-calendario {
+  grid-area: calendario;
+}
+
+.item-lista {
+  grid-area: lista;
+}
