@@ -58,6 +58,27 @@ const Historico = ({className}) => {
             <td>Possivel febre amarela</td>
             <td>R$ 70,00</td>
           </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Emily</td>
+            <td>15 de setembro de 2023</td>
+            <td>Possivel febre amarela</td>
+            <td>R$ 70,00</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Emily</td>
+            <td>15 de setembro de 2023</td>
+            <td>Possivel febre amarela</td>
+            <td>R$ 70,00</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Emily</td>
+            <td>15 de setembro de 2023</td>
+            <td>Possivel febre amarela</td>
+            <td>R$ 70,00</td>
+          </tr>
         </tbody>
       </table>
     </div>

@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const BarraDeBusca = ({ handleBuscarInformacao, className }) => {
+import './BarraDeBusca.css'
+
+const BarraDeBusca = ({ handleBuscarInformacao }) => {
 
   const [palavraDigitada, setPalavraDigitada] = useState('')
 
@@ -11,7 +13,7 @@ const BarraDeBusca = ({ handleBuscarInformacao, className }) => {
   }
 
   return (
-    <div className={`my-3 ${className}`}>
+    <div className={`p-3 input-group`}>
       <input
         type="search"
         value={palavraDigitada}
@@ -35,7 +37,6 @@ const BarraDeBusca = ({ handleBuscarInformacao, className }) => {
 
 BarraDeBusca.propTypes = {
   handleBuscarInformacao: PropTypes.func,
-  className: PropTypes.string,
 }
 
 export default BarraDeBusca

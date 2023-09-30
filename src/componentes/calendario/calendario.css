@@ -20,7 +20,8 @@
 }
 
 .calendario {
-  max-width: 350px;
-  max-height: 300px;
+  max-height: 65vh;
   overflow: auto;
+  border: 5px solid #eee;
+  border-radius: 15px;
 }

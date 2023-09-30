@@ -4,7 +4,6 @@ import './listaPacientes.css'
 import PerfilLinear from '../perfil_linear/PerfilLinear'
 import PropTypes from 'prop-types'
 
-
 const mockup_pacientes = [
   {
     nome: 'Carlos Andrade',
@@ -58,18 +57,17 @@ const mockup_medicos = [
     status: 'Presente no Hospital',
   },
 ]
-const ListaPacientes = ({ ehPacientes = true, ehMedicos, className }) => {
-
+const ListaPacientes = ({ ehPacientes = true, ehMedicos }) => {
   const [listaUsuarios, setListaUsuarios] = useState([])
 
   const handleListaUsuarios = useCallback(() => {
     if (ehPacientes) {
       return mockup_pacientes.map((paciente, index) => {
-        return <PerfilLinear key={index+paciente.tipo_sanguineo} paciente={paciente} />
+        return <PerfilLinear key={index + paciente.tipo_sanguineo} paciente={paciente} />
       })
     }
     return mockup_medicos.map((medico, index) => {
-      return <PerfilLinear key={index+medico.especialidade} medico={medico} />
+      return <PerfilLinear key={index + medico.especialidade} medico={medico} />
     })
   }, [ehPacientes])
 
@@ -77,18 +75,12 @@ const ListaPacientes = ({ ehPacientes = true, ehMedicos, className }) => {
     setListaUsuarios(handleListaUsuarios())
   }, [ehMedicos, ehPacientes, handleListaUsuarios])
 
-
-  return (
-    <div className={`lista-pacientes ${className}`}>
-      {listaUsuarios}
-    </div>
-  )
+  return <div className={`d-flex flex-column row-gap-3 lista-pacientes`}>{listaUsuarios}</div>
 }
 
 ListaPacientes.propTypes = {
   ehPacientes: PropTypes.array,
   ehMedicos: PropTypes.array,
-  className: PropTypes.string,
 }
 
 export default ListaPacientes

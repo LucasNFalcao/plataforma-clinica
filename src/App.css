@@ -5,4 +5,5 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+  max-height: 100vh;
 }

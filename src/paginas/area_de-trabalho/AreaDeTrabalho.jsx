@@ -14,16 +14,15 @@ const AreaDeTrabalho = () => {
   console.log('area de trabalho', buscarInformacao)
 
   return (
-    <div className={`grid-container`}>
-      <section>
-        <BarraDeBusca handleBuscarInformacao={setBuscarInformacao}
-          className={'item-busca'} />
-        <MenuRolagem className={'item-lembrete'} />
-        <Historico className={'item-historico'} />
+    <div className={`d-flex mx-3`}>
+      <section className={`col-6 p-2 row-gap-3 section-lateral`}>
+        <BarraDeBusca handleBuscarInformacao={setBuscarInformacao} />
+        <MenuRolagem />
+        <Historico />
       </section>
-      <section>
-        <Calendario className={'item-calendario'} />
-        <ListaPacientes className={'item-lista'} />
+      <section className={`col-6 p-2 row-gap-3 section-lateral`}>
+        <Calendario />
+        <ListaPacientes />
       </section>
     </div>
   )
