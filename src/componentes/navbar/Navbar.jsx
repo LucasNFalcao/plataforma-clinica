@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import './navbar.css'
 
 const Navbar = () => {
@@ -16,22 +18,22 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#">
+          <Link to="/">
             <img className={`logos-imgs`} src="./src/assets/house-check.svg" alt="" />
             <span className={`nav-item`}>Área de Trabalho</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/agendamento">
             <img className={`logos-imgs`} src="./src/assets/pencil-square.svg" alt="" />
             <span className={`nav-item`}>Agendamento de Consulta</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/consultas-marcadas">
             <img className={`logos-imgs`} src="./src/assets/journal-medical.svg" alt="" />
             <span className={`nav-item`}>Consulta de Agendamentos</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
