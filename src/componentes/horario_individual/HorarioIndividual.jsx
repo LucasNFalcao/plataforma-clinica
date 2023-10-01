@@ -4,36 +4,35 @@ import PerfilLinear from '../perfil_linear/PerfilLinear'
 import './horarioIndividual.css'
 
 const HorarioIndividual = ({ horarioInfo }) => {
-
-  let { horario, temPaciente, medicoAtendendo } = horarioInfo
-
   return (
     <>
-      {medicoAtendendo ? (
-        <div>
-          <span>{horario}</span>
-          {temPaciente && <PerfilLinear />}
-          {temPaciente === true ? (
-            <div>
-              <button>
-                <img src="./src/assets/calendar2-week.svg" alt="" />
+      {horarioInfo?.horaIndisponivel ? (
+        <div className={`horario-indisponivel ajustes-font d-flex align-items-center`}>
+          <span>{horarioInfo.horaIndisponivel}</span>
+        </div>
+      ) : (
+        <div
+          className={`ajustes-font horario-disponivel d-flex align-items-center justify-content-between`}
+        >
+          <span>{horarioInfo?.horario ? horarioInfo.horario : horarioInfo}</span>
+          {horarioInfo?.horario && <PerfilLinear paciente={horarioInfo.paciente} />}
+          {horarioInfo?.horario ? (
+            <div className={`buttons-ajuste d-flex align-self-end column-gap-2`}>
+              <button className={`bg-white`}>
+                <img className={`img-svg`} src="./src/assets/calendar2-week.svg" alt="" />
               </button>
-              <button>
-                <img src="./src/assets/trash3.svg" alt="" />
+              <button className={`bg-white`}>
+                <img className={`img-svg`} src="./src/assets/trash3.svg" alt="" />
               </button>
-              <button>
-                <img src="./src/assets/pencil-fill.svg" alt="" />
+              <button className={`bg-white`}>
+                <img className={`img-svg`} src="./src/assets/pencil-fill.svg" alt="" />
               </button>
             </div>
           ) : (
-            <button>
-              <img src="./src/assets/plus-circle.svg" alt="" />
+            <button className={`bg-white d-flex`}>
+              <img className={`img-svg`} src="./src/assets/plus-circle.svg" alt="" />
             </button>
           )}
-        </div>
-      ) : (
-        <div>
-          <span>{horario}</span>
         </div>
       )}
     </>
@@ -43,8 +42,8 @@ const HorarioIndividual = ({ horarioInfo }) => {
 HorarioIndividual.propTypes = {
   horarioInfo: PropTypes.shape({
     horario: PropTypes.string,
-    temPaciente: PropTypes.bool,
-    medicoAtendendo: PropTypes.bool,
+    horaIndisponivel: PropTypes.string,
+    paciente: PropTypes.shape({}),
   }),
 }
 

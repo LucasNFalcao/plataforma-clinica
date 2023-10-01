@@ -22,7 +22,7 @@ const AreaDeTrabalho = () => {
       </section>
       <section className={`col-6 p-2 row-gap-3 section-lateral`}>
         <Calendario />
-        <ListaPacientes />
+        <ListaPacientes ehPacientes />
       </section>
     </div>
   )

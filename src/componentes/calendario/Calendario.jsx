@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 
 import './calendario.css'
 
@@ -27,7 +26,11 @@ const getTodoList = (date) => {
   }
 }
 
-const Calendario = ({ className }) => {
+const Calendario = () => {
+  const data = new Date()
+  data.setDate(20)
+  data.setMonth(8)
+
   function renderCell(date) {
     const list = getTodoList(date)
     const displayList = list.filter((item, index) => index < 2)
@@ -69,11 +72,7 @@ const Calendario = ({ className }) => {
     return null
   }
 
-  return <Calendar className={`calendario ${className}`} bordered renderCell={renderCell} />
-}
-
-Calendario.propTypes = {
-  className: PropTypes.string
+  return <Calendar className={`calendario`} defaultValue={data} value={data} bordered renderCell={renderCell} />
 }
 
 export default Calendario

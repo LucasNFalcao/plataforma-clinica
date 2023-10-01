@@ -6,9 +6,9 @@ import ListaDeHorarios from '../../componentes/lista_de_horarios/ListaDeHorarios
 
 const Agendamento = () => {
   return (
-    <div className={`d-flex p-3 agendamento-container`}>
-      <div className={`col-6`}>
-        <ListaPacientes />
+    <div className={`d-flex p-3 agendamento-container column-gap-2`}>
+      <div className={`d-flex flex-column col-6 row-gap-3`}>
+        <ListaPacientes ehMedicos />
         <Calendario />
       </div>
       <div className={`col-6`}>

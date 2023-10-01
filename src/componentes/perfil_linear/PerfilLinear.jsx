@@ -21,15 +21,15 @@ const PerfilLinear = ({ paciente, medico }) => {
   return (
     <button
       type="button"
-      className={`d-flex p-3 align-items-center justify-content-around button-container`}
+      className={`d-flex p-3 align-items-center justify-content-start button-container`}
     >
-      <img className={`img-perfil`} src="./src/assets/person-circle.svg" alt="" />
-      <div className={`d-flex`}>
-        <div className={`d-flex justify-content-start column-gap-2`}>
+      <img className={`me-4 img-perfil`} src="./src/assets/person-circle.svg" alt="" />
+      <div className={`d-flex align-items-center`}>
+        <div className={`d-flex align-items-center column-gap-2`}>
           <p className={`words`}>Nome: {nome}</p>
           <p className={`words`}>Idade: {idade}</p>
         </div>
-        <div className={`d-flex justify-content-start column-gap-2`}>
+        <div className={`d-flex align-items-center column-gap-2`}>
           <p className={`words`}>
             {medico?.especialidade
               ? `Especialidade: ${medico?.especialidade}`
