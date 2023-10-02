@@ -4,37 +4,6 @@ import './header.css'
 
 const Header = ({ nameClass }) => {
 
-  const data = new Date()
-
-  const handleMes = (numeroMes) => {
-    switch (numeroMes) {
-      case 0:
-        return 'Janeiro'
-      case 1:
-        return 'Fevereiro'
-      case 2:
-        return 'Março'
-      case 3:
-        return 'Abril'
-      case 4:
-        return 'Maio'
-      case 5:
-        return 'Junho'
-      case 6:
-        return 'Julho'
-      case 7:
-        return 'Agosto'
-      case 8:
-        return 'Setembro'
-      case 9:
-        return 'Outubro'
-      case 10:
-        return 'Novembro'
-      case 11:
-        return 'Dezembro'
-    }
-  }
-
   return (
     <header
       className={`container-fluid d-flex justify-content-between align-items-center
@@ -43,8 +12,7 @@ const Header = ({ nameClass }) => {
       <div className={`d-flex flex-column ms-5 text-start`}>
         <h3 className={`fw-bold text-black fs-3`}>WebAPP - Consultório Médico</h3>
         <p className={`text-black fs-5`}>
-          Bem vindo Dr, hoje é {data.getDate()} de {handleMes(data.getMonth())} de{' '}
-          {data.getFullYear()}
+          Bem vindo Dr.
         </p>
       </div>
       <div className={`d-flex flex-column align-items-center btn btn-perfil`}>

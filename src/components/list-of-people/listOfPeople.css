@@ -1,7 +1,3 @@
-.scrollbar {
-  overflow: auto;
-}
-
 .list-users{
   width: 100%;
   min-height: 32vh;

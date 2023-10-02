@@ -36,7 +36,6 @@ const CalendarHospital = () => {
     const displayList = list.filter((item, index) => index < 2)
 
     if (list.length) {
-      const moreCount = list.length - displayList.length
       const moreItem = (
         <li>
           <Whisper
@@ -52,7 +51,7 @@ const CalendarHospital = () => {
               </Popover>
             }
           >
-            <a>{moreCount} more</a>
+            <a className={`text-black anchor-see-more`}>ver</a>
           </Whisper>
         </li>
       )
@@ -64,7 +63,7 @@ const CalendarHospital = () => {
               <Badge /> <b>{item.time}</b> - {item.title}
             </li>
           ))}
-          {moreCount ? moreItem : null}
+          {moreItem}
         </ul>
       )
     }

@@ -26,7 +26,6 @@ const ListOfPeople = ({ isHospitalPatient = false, isDoctor = false }) => {
   }, [isHospitalPatient])
 
   const handleUpdateList = () => {
-    console.log('list: ', listUsers)
     if (isHospitalPatient) {
       return listUsers?.map((hospitalPatient, index) => {
         return (

@@ -21,7 +21,7 @@ const RowUserInfo = ({ hospitalPatient, doctor }) => {
   return (
     <button
       type="button"
-      className={`d-flex p-3 align-items-center justify-content-start button-container`}
+      className={`d-flex align-items-center justify-content-start button-container`}
     >
       <img className={`me-4 img-profile`} src="./src/assets/person-circle.svg" alt="" />
       <div className={`d-flex align-items-center`}>

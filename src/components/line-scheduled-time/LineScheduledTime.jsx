@@ -12,10 +12,12 @@ const LineScheduledTime = ({ infoScheduledTime }) => {
         </div>
       ) : (
         <div
-          className={`ajustes-font time-on-agenda d-flex align-items-center justify-content-between`}
+          className={`settings-font time-on-agenda d-flex align-items-center justify-content-between`}
         >
           <span>{infoScheduledTime?.horario ? infoScheduledTime.horario : infoScheduledTime}</span>
-          {infoScheduledTime?.horario && <RowUserInfo paciente={infoScheduledTime.paciente} />}
+          {infoScheduledTime?.horario && (
+            <RowUserInfo hospitalPatient={infoScheduledTime.paciente} />
+          )}
           {infoScheduledTime?.horario ? (
             <div className={`settings-buttons d-flex align-self-end column-gap-2`}>
               <button className={`bg-white`}>
@@ -40,11 +42,10 @@ const LineScheduledTime = ({ infoScheduledTime }) => {
 }
 
 LineScheduledTime.propTypes = {
-  infoScheduledTime: PropTypes.shape({
-    horario: PropTypes.string,
-    horaIndisponivel: PropTypes.string,
-    paciente: PropTypes.shape({}),
-  }),
+  infoScheduledTime: PropTypes.any,
+  horario: PropTypes.string,
+  horaIndisponivel: PropTypes.string,
+  paciente: PropTypes.shape({}),
 }
 
 export default LineScheduledTime

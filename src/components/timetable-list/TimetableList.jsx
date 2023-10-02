@@ -1,4 +1,5 @@
-import { useState, useEffect, useCallback } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useEffect } from 'react'
 import LineScheduledTime from '../line-scheduled-time/LineScheduledTime'
 
 import './timetableList.css'
@@ -30,7 +31,7 @@ const TimetableList = () => {
   }, [])
 
 
-  const handleUpdateDailyAgenda = useCallback(() => {
+  const handleUpdateDailyAgenda = () => {
     const auxiliaryList = []
     let itemDailyAgenda
 
@@ -52,11 +53,11 @@ const TimetableList = () => {
     }
 
     return auxiliaryList
-  }, [dailyAgenda, scheduledTimetable, schedulesUnavailable])
+  }
 
   useEffect(() => {
     setDailyAgenda(handleUpdateDailyAgenda())
-  }, [handleUpdateDailyAgenda, scheduledTimetable, schedulesUnavailable])
+  }, [scheduledTimetable, schedulesUnavailable])
 
   return (
     <div className={`list-container`}>
