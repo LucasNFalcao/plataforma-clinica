@@ -1,0 +1,9 @@
+.list-container {
+  max-height: 100vh;
+  height: 100%;
+}
+
+.unordered-list {
+  height: 100%;
+  padding: 10px;
+}

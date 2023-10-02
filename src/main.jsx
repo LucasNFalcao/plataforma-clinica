@@ -7,10 +7,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AreaDeTrabalho from './paginas/area-de-trabalho/AreaDeTrabalho.jsx'
-import Agendamento from './paginas/agendamento/Agendamento.jsx';
-import Erro from './paginas/erro/Erro.jsx';
-import Login from './paginas/login/Login.jsx';
+import AreaDeTrabalho from './pages/working-area-page/WorkingAreaPage.jsx'
+import Agendamento from './pages/booking-page/BookingPage.jsx';
+import Erro from './pages/erro/Erro.jsx';
+import Login from './pages/login/Login.jsx';
 
 const routes = createBrowserRouter([
   {

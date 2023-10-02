@@ -1,0 +1,42 @@
+nav {
+  max-height: calc(100vh - 130px);
+  height: 100%;
+  width: 70px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  background-color: lightgray;
+}
+
+a {
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #eee;
+}
+
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+.nav-item {
+  max-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  word-break: break-word;
+  color: #000;
+  text-decoration: none;
+}
+
+.logos-imgs {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 5px;
+}

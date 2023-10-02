@@ -1,0 +1,28 @@
+.container-working-area {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'navbar page page'
+  'navbar page page';
+}
+
+.section-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-header{
+  grid-area: header;
+}
+
+.item-page {
+  max-height: calc(100vh - 130px);
+  height: 100%;
+  grid-area: page;
+}
+
+.item-navbar {
+  grid-area: navbar;
+}

@@ -1,0 +1,13 @@
+.scrollbar {
+  overflow: auto;
+}
+
+.list-users{
+  width: 100%;
+  min-height: 32vh;
+  border: 5px solid lightgray;
+  border-radius: 15px;
+  overflow-y: auto;
+  background-color:whitesmoke;
+  padding: 15px;
+}

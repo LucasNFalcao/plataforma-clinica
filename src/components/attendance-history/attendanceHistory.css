@@ -1,0 +1,9 @@
+.attendance-container {
+  overflow-y: auto;
+  border: 5px solid lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 30vh;
+  width: 100%;
+  background-color: white;
+}

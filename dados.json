@@ -266,5 +266,71 @@
     }
   ],
 
-  "historico_clinico": []
+  "lista_lembretes": [
+    {
+      "title": "Levar cachorro para passear",
+      "text_info": "This is the second items accordion body. It is hidden by default, until"
+    },
+    {
+      "title": "Consultar saldo no banco",
+      "text_info": "This is the second items accordion body. It is hidden by default, until"
+    },
+    {
+      "title": "Buscar filha na escola",
+      "text_info": "This is the second items accordion body. It is hidden by default, until"
+    },
+    {
+      "title": "Passar no supermercado antes de ir para casa",
+      "text_info": "This is the second items accordion body. It is hidden by default, until"
+    },
+    {
+      "title": "Buscar terno na lavanderia",
+      "text_info": "This is the second items accordion body. It is hidden by default, until"
+    }
+  ],
+
+  "historico_clinico": [
+    {
+      "nome": "Mark",
+      "data": "2023-08-20",
+      "diagnostico": "Enxaqueca com prisão de ventre",
+      "valor": "R$ 50,00"
+    },
+    {
+      "nome": "Otto",
+      "data": "2023-08-13",
+      "diagnostico": "Virose: dor de cabeça com enjoo",
+      "valor": "R$ 65,00"
+    },
+    {
+      "nome": "Emily",
+      "data": "2023-08-15",
+      "diagnostico": "Possivel febre amarela",
+      "valor": "R$ 70,00"
+    },
+    {
+      "nome": "Mark",
+      "data": "2023-08-15",
+      "diagnostico": "Intoxicação alimentar",
+      "valor": "R$ 80,00"
+    },
+    {
+      "nome": "Mark",
+      "data": "2023-08-08",
+      "diagnostico": "Braço direito quebrado",
+      "valor": "R$ 200,00"
+    },
+    {
+      "nome": "Emily",
+      "data": "2023-08-20",
+      "diagnostico": "Alergia a isopropol",
+      "valor": "R$ 100,00"
+    },
+    {
+      "nome": "Mark",
+      "data": "2023-08-01",
+      "diagnostico": "Dor muscular no braço direito",
+      "valor": "R$ 80,00"
+    }
+  ]
 }

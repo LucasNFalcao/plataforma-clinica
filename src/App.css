@@ -5,5 +5,10 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.container-app {
   max-height: 100vh;
+  height: 100%;
+  background-color: whitesmoke;
 }
