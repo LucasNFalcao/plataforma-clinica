@@ -30,20 +30,23 @@ const TimetableList = () => {
       .catch((error) => console.log(error))
   }, [])
 
-
   const handleUpdateDailyAgenda = () => {
     const auxiliaryList = []
     let itemDailyAgenda
 
-    for (let counter = 0; counter < dailyAgenda.length; counter++){
-      itemDailyAgenda = ""
-      for (let contScheduled = 0; contScheduled < scheduledTimetable.length; contScheduled++){
+    for (let counter = 0; counter < dailyAgenda.length; counter++) {
+      itemDailyAgenda = ''
+      for (let contScheduled = 0; contScheduled < scheduledTimetable.length; contScheduled++) {
         if (dailyAgenda[counter] === scheduledTimetable[contScheduled].horario) {
           itemDailyAgenda = scheduledTimetable[contScheduled]
         }
       }
 
-      for (let contUnavailableTime = 0; contUnavailableTime < scheduledTimetable.length; contUnavailableTime++) {
+      for (
+        let contUnavailableTime = 0;
+        contUnavailableTime < scheduledTimetable.length;
+        contUnavailableTime++
+      ) {
         if (dailyAgenda[counter] === schedulesUnavailable[contUnavailableTime].horaIndisponivel) {
           itemDailyAgenda = schedulesUnavailable[contUnavailableTime]
         }

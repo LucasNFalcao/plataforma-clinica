@@ -1,0 +1,32 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.form-container {
+  border-radius: 20px;
+}
+
+.values-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  padding: 10px 70px;
+}
+
+.input-modal {
+  border: 3px solid lightgray;
+  height: 30px;
+  width: 100%;
+}
+
+.label-form-modal {
+  font-size: 14px;
+}

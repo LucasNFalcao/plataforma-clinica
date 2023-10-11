@@ -41,7 +41,6 @@
       "ultima_consulta": "2023-08-15"
     }
   ],
-
   "medicos": [
     {
       "nome": "Carlos Andrade",
@@ -122,21 +121,9 @@
       ]
     }
   ],
-
   "agendamentos": [
     {
-      "data": "2023-08-20",
-      "horario": "08:00",
-      "paciente": {
-        "nome": "Luiz Carlos",
-        "idade": "25 anos",
-        "cpf": "090.080.070-85",
-        "tipo_sanguineo": "AB-",
-        "ultima_consulta": "2023-08-15"
-      },
-      "medicoAtendendo": "José de Abreu"
-    },
-    {
+      "id": 2,
       "data": "2023-08-20",
       "horario": "08:30",
       "paciente": {
@@ -149,18 +136,7 @@
       "medicoAtendendo": "Joana Lopes"
     },
     {
-      "data": "2023-08-22",
-      "horario": "08:00",
-      "paciente": {
-        "nome": "Luiz Carlos",
-        "idade": "25 anos",
-        "cpf": "090.080.070-85",
-        "tipo_sanguineo": "AB-",
-        "ultima_consulta": "2023-08-10"
-      },
-      "medicoAtendendo": "Joana Lopes"
-    },
-    {
+      "id": 4,
       "data": "2023-08-20",
       "horario": "16:00",
       "paciente": {
@@ -173,6 +149,7 @@
       "medicoAtendendo": "José de Abreu"
     },
     {
+      "id": 5,
       "data": "2023-08-20",
       "horario": "17:00",
       "paciente": {
@@ -185,6 +162,7 @@
       "medicoAtendendo": "José de Abreu"
     },
     {
+      "id": 6,
       "data": "2023-08-22",
       "horario": "09:00",
       "paciente": {
@@ -197,7 +175,6 @@
       "medicoAtendendo": "Carlos Andrade"
     }
   ],
-
   "definicao_horarios": [
     "08:00",
     "08:30",
@@ -222,7 +199,6 @@
     "18:00",
     "18:30"
   ],
-
   "horarios_indisponiveis": [
     {
       "data": "2023-08-20",
@@ -265,7 +241,6 @@
       "medico": "Carlos Andrade"
     }
   ],
-
   "lista_lembretes": [
     {
       "title": "Levar cachorro para passear",
@@ -288,7 +263,6 @@
       "text_info": "This is the second items accordion body. It is hidden by default, until"
     }
   ],
-
   "historico_clinico": [
     {
       "nome": "Mark",

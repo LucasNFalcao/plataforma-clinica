@@ -7,7 +7,6 @@ import ListOfPeople from '../../components/list-of-people/ListOfPeople'
 import TimetableList from '../../components/timetable-list/TimetableList'
 
 const BookingPage = () => {
-
   return (
     <div className={`booking-container`}>
       <Header nameClass={`item-header`} />
