@@ -1,5 +1,18 @@
-<h1 align="center"> Plataforma Clinica </h1>
+# Plataforma Clinica
 
-<p align="center">
-<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
+<h3 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h3>
+
+## Descrição do projeto
+<p>Esse projeto consiste em ser uma plataforma onde médicos tenham acesso a sua agenda, podendo adicionar, remover ou remarcar alguma consulta que tenha no dia. Além de poderem fazer o registro de cada consulta em que atendeu, tendo todo o histórico do paciente</p>
+
+
+## Tecnologias utilizadas
+- ``HTML5``
+- ``CSS3``
+- ``Javascript``
+- ``React.js``
+- ``Vite.js``
+- ``Bootstrap``
+- ``JSON Server``
